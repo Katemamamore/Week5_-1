@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
     <style>
+.body{
+    min-height: 100vh;
+    text-align: center;
+}
 .header {
     display: flex;
     justify-content: center;
@@ -15,43 +19,89 @@
     padding: 3%;
     height: 25%;
 }
-.main {
+.main{
+    border: 1px solid red;
     display: flex;
-    
-
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
 }
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+background-color: antiquewhite;
+}
+.h1{
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 5%;
+}
+.div {
+    border: 1px solid blue;
+    flex-wrap: wrap;  
+    display: flex;
+    height: 30%;
+    align-self: flex-end;
+    flex-basis: 100%;
+    
+}
+.content{ 
+    background-color: rgb(253, 218, 176);
+    flex-basis: 46%;
+    height: 35% ;
+    margin: auto;
+   
+    
+    
+}
+.content3{
+    background-color: rgb(253, 218, 176);
+    flex-basis: 96%;
+    height: 35% ;
+    margin: auto;
+}
+.aside{
+    background-color: rgb(223, 250, 208);
+    width: 40%;
+   }
+   .h2{
+    margin-top: 7%;
+   }
     </style>
 </head>
-<body>
-<header class="header">Шапка страницы
-
+<body class="body">
+<header class="header">
+    <h2>[Шапка страницы]</h2>
 </header>
 <main class="main">
-    <section>
-        <h1>Основная часть</h1>
-        <div>
-            Еще 1
-        </div>
-        <div>
-            Еще 2
-        </div>
-        <div>
-            Еще 3
-        </div>
-    </section>
-<aside>
-<h1>Боковая область</h1>
+    <section class="section">
+        <h1 class="h1">[Основная часть]</h1>
+        <div class="div">
+        <p class="content">
+            [Еще 1]
+        </p>
+        <p class="content">
+            [Еще 2]
+        </p>
+        <p class="content3">
+            [Еще 3]
+        </p>
+    </div>
+</section>
+<aside class="aside">
+<h1 class="h2">[Боковая область]</h1>
 </aside>
 </main>
 <footer>
 <nav>
-    <ul>
-        <li>Секция футера 1</li>
-        <li>Секция футера 2</li>
-        <li>Секция футера 3</li>
-        <li>Секция футера 4</li>
-    </ul>
-</nav>
+    <div>
+        <p>[Секция футера 1]</p>
+        <p>[Секция футера 2]</p>
+        <p>[Секция футера 3]</p>
+        <p>[Секция футера 4]</p>
+    </div>
+    </nav>
 </footer>
 </body>
 </html>
